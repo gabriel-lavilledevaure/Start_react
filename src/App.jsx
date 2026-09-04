@@ -1,13 +1,19 @@
+function User({ src, name, fonction }) {
+  return (
+    <div className="bg-amber-900">
+      <img alt="{name}" src={src}></img>
+      <h2>{name}</h2>
+      <p>{fonction}</p>
+    </div>
+  );
+}
+
 function App() {
   return (
     <>
-      <h1 className="bg-amber-300">Hedy Lamarr's Todos</h1>
-      <img src="https://i.imgur.com/yXOvdOSs.jpg" alt="Hedy Lamarr" />
-      <ul>
-        <li>Invent new traffic lights</li>
-        <li>Rehearse a movie scene</li>
-        <li>Improve the spectrum technology</li>
-      </ul>
+      <User name="Hedy Lamarr" fonction="" src="https://i.pravatar.cc/300" />
+      <User name="Hedy Lamarr" fonction="" src="https://i.pravatar.cc/300" />
+      <User name="Hedy Lamarr" fonction="" src="https://i.pravatar.cc/300" />
     </>
   );
 }
