@@ -1,3 +1,5 @@
+import Button from "./UI/Button";
+
 function User({ src, name, fonction }) {
   return (
     <div className="flex items-center gap-7 py-5">
@@ -10,11 +12,7 @@ function User({ src, name, fonction }) {
         <h2 className="text-2xl font-semibold text-slate-900">{name}</h2>
         <p className="mt-1 text-xl text-slate-400">{fonction}</p>
       </div>
-      <button
-        type="button"
-        aria-label={`Message ${name}`}
-        className="flex h-14 w-20 items-center justify-center rounded-full border-2 border-cyan-200 text-cyan-500 transition hover:bg-cyan-100"
-      >
+      <Button className="ml-auto">
         <svg
           id="message"
           xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +59,7 @@ function User({ src, name, fonction }) {
             strokeWidth="12"
           />
         </svg>
-      </button>
+      </Button>
     </div>
   );
 }
