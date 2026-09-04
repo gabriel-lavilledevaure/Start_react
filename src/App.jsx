@@ -6,7 +6,7 @@ function App() {
     <main className="min-h-screen bg-slate-50 px-6 py-12 sm:px-10">
       <section className="mx-auto max-w-2xl bg-white px-8 py-10 shadow-xl sm:px-12">
         <Header></Header>
-        <div className="divide-y divide-transparent">
+        <div>
           <User
             name="Dale Houston"
             fonction="Software Engineer"

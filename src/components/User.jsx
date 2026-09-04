@@ -13,7 +13,7 @@ function User({ src, name, fonction }) {
       <button
         type="button"
         aria-label={`Message ${name}`}
-        className="flex h-14 w-28 items-center justify-center rounded-full border-4 border-cyan-200 text-cyan-400 transition hover:bg-cyan-50"
+        className="flex h-14 w-20 items-center justify-center rounded-full border-2 border-cyan-200 text-cyan-500 transition hover:bg-cyan-100"
       >
         <svg
           id="message"
