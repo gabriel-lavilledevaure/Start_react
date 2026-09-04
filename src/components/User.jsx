@@ -1,13 +1,19 @@
 import Button from "./UI/Button";
 
-function User({ src, name, fonction }) {
+function User({ src, name, fonction, connected }) {
+  const statusColor = connected ? "bg-green-500" : "bg-red-500";
   return (
     <div className="flex items-center gap-7 py-5">
-      <img
-        className="h-20 w-20 rounded-full object-cover"
-        alt={name}
-        src={src}
-      />
+      <div className="relative">
+        <img
+          className="h-20 w-20 rounded-full object-cover"
+          alt={name}
+          src={src}
+        />
+        <span
+          className={`${statusColor} absolute right-0 bottom-0 block h-3 w-3 rounded-full`}
+        ></span>
+      </div>
       <div className="min-w-0 flex-1">
         <h2 className="text-2xl font-semibold text-slate-900">{name}</h2>
         <p className="mt-1 text-xl text-slate-400">{fonction}</p>
