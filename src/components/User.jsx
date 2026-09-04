@@ -12,6 +12,7 @@ function User({ src, name, fonction, connected }) {
         />
         <span
           className={`${statusColor} absolute right-0 bottom-0 block h-3 w-3 rounded-full`}
+          // className={` absolute right-0 bottom-0 block h-3 w-3 rounded-full ${connected ? "bg-green-500 : "bg-red-500"}`}
         ></span>
       </div>
       <div className="min-w-0 flex-1">
